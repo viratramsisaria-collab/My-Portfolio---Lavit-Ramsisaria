@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b0a">
+  <meta name="description" content="About Lavit Ramsisaria — software development, agentic AI, practical tools, and engineering principles.">
+  <meta property="og:title" content="About — Lavit Ramsisaria">
+  <meta property="og:description" content="The engineering interests, tools, and principles behind my projects.">
+  <meta property="og:type" content="website">
+  <title>About — Lavit Ramsisaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <style>
+    :root{color-scheme:dark;--bg:#080b0a;--panel:#0e1311;--panel2:#121916;--line:#242e29;--text:#eff5f0;--muted:#9aa79f;--dim:#647168;--mint:#9cffc8;--lime:#d5ff76;--display:"Space Grotesk",sans-serif;--body:"Inter",sans-serif;--mono:"DM Mono",monospace;--max:1180px;--ease:cubic-bezier(.2,.8,.2,1)}
+    *,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 75% 0%,rgba(91,185,130,.1),transparent 36rem),var(--bg);color:var(--text);font-family:var(--body);line-height:1.65;-webkit-font-smoothing:antialiased}body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E")}
+    ::selection{background:var(--mint);color:#08100b}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid var(--mint);outline-offset:5px}.wrap{width:min(var(--max),calc(100% - 48px));margin-inline:auto}.mono{font-family:var(--mono)}.eyebrow{color:var(--mint);font:500 .74rem/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase}.muted{color:var(--muted)}.icon{width:17px;height:17px;vertical-align:middle}.section{padding-block:100px}.section-title{font:600 clamp(2.2rem,5vw,4rem)/1.04 var(--display);letter-spacing:-.065em;margin:10px 0 18px}.section-intro{max-width:690px;color:var(--muted);font-size:1rem}
+    .header{position:sticky;top:0;z-index:100;border-bottom:1px solid var(--line);background:rgba(8,11,10,.88);backdrop-filter:blur(18px)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{font:700 1.25rem var(--display);letter-spacing:-.06em}.brand span{color:var(--mint)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a{color:var(--muted);font-size:.84rem;transition:color .2s}.nav-links a:hover,.nav-links a.active{color:var(--mint)}.nav-actions{display:flex;align-items:center;gap:10px}.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:7px;background:transparent;color:var(--text);font-size:.84rem;font-weight:600;transition:transform .2s var(--ease),border-color .2s,background .2s}.button:hover{transform:translateY(-2px);border-color:#658775}.button.primary{border-color:var(--mint);background:var(--mint);color:#07110b}.button.primary:hover{background:#c2ffda}.menu-toggle{display:none;width:42px;height:42px;border:1px solid var(--line);background:var(--panel);border-radius:7px}.mobile-menu{display:none;padding:0 20px 18px;background:#080b0a}.mobile-menu.open{display:grid}.mobile-menu a{padding:11px 0;color:var(--muted);border-bottom:1px solid var(--line)}
+    .hero{padding-block:94px 76px;position:relative;overflow:hidden}.hero::after{content:"";position:absolute;right:-100px;top:30px;width:360px;height:360px;border:1px solid #9cffc810;border-radius:50%;box-shadow:0 0 0 45px #9cffc806,0 0 0 90px #9cffc804;pointer-events:none}.hero-content{position:relative;z-index:1;max-width:850px}.hero h1{margin:16px 0 20px;font:600 clamp(3.1rem,8vw,6.4rem)/.98 var(--display);letter-spacing:-.075em}.hero h1 span{color:var(--mint)}.hero p{max-width:690px;color:var(--muted);font-size:1.04rem}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-meta{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:30px;color:var(--dim);font: .72rem var(--mono)}.hero-meta span::before{content:"•";color:var(--mint);margin-right:8px}
+    .two-col{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px}.content-copy p{margin:0 0 17px;color:var(--muted)}.content-copy strong{color:var(--text);font-weight:500}.panel-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.panel{padding:21px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(145deg,#111713,#0b0f0d)}.panel .panel-icon{display:inline-grid;place-items:center;width:37px;height:37px;border:1px solid #314337;border-radius:7px;color:var(--mint);margin-bottom:18px}.panel h3{font:600 1.08rem var(--display);margin:0 0 8px}.panel p{font-size:.84rem;color:var(--muted);margin:0}
+    .toolkit{background:linear-gradient(180deg,transparent,#10171345,transparent)}.toolkit-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}.toolkit-head p{max-width:430px;color:var(--muted);margin:0}.skill-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.skill-card{padding:22px;border:1px solid var(--line);border-radius:8px;background:#0d120f}.skill-card h3{font:500 .75rem var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--mint);margin:0 0 15px}.chips{display:flex;flex-wrap:wrap;gap:7px}.chips span{font-size:.77rem;color:#d0d9d2;padding:6px 9px;background:#ffffff06;border:1px solid #29322c;border-radius:4px}
+    .architecture{border-block:1px solid var(--line);background:#0b100d}.architecture-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:34px}.step{position:relative;padding:19px 15px;border:1px solid var(--line);border-radius:7px;background:var(--panel)}.step .number{color:var(--mint);font:.72rem var(--mono)}.step h3{font:500 1rem var(--display);margin:14px 0 7px}.step p{color:var(--muted);font-size:.77rem;margin:0}.step:not(:last-child)::after{content:"→";position:absolute;z-index:2;top:16px;right:-12px;color:var(--mint);background:var(--bg);padding:0 3px}
+    .principles-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}.principles-list{border-top:1px solid var(--line)}.principle{display:grid;grid-template-columns:40px 1fr;gap:15px;padding:20px 0;border-bottom:1px solid var(--line)}.principle .number{color:var(--mint);font:.76rem var(--mono);padding-top:3px}.principle h3{margin:0 0 5px;font:500 1rem var(--display)}.principle p{margin:0;color:var(--muted);font-size:.84rem}.focus-box{margin-top:28px;padding:22px;border:1px solid var(--line);border-radius:8px;background:#0d120f}.focus-box h3{margin:0 0 15px;color:var(--mint);font:500 .75rem var(--mono);text-transform:uppercase}.focus-list{display:flex;flex-wrap:wrap;gap:8px}.focus-list span{padding:7px 10px;border:1px solid #2a372e;border-radius:4px;color:var(--muted);font-size:.78rem}
+    .contact{padding-block:30px 105px}.contact-panel{padding:clamp(35px,7vw,75px) 24px;text-align:center;border:1px solid #334b3b;border-radius:12px;background:radial-gradient(ellipse at 50% 0%,#9cffc812,transparent 60%),#0d130f}.contact-panel h2{max-width:750px;margin:13px auto;font:600 clamp(2.4rem,6vw,4.5rem)/1.03 var(--display);letter-spacing:-.07em}.contact-panel>p{max-width:520px;margin:0 auto;color:var(--muted)}.contact-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:27px}.footer{padding:24px 0;border-top:1px solid var(--line)}.footer-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px;color:var(--dim);font:.7rem var(--mono)}.footer-links{display:flex;gap:17px}.footer-links a:hover{color:var(--mint)}.progress{position:fixed;z-index:120;left:0;top:0;height:2px;width:0;background:var(--mint)}
+    @media(max-width:900px){.two-col,.principles-grid{grid-template-columns:1fr;gap:32px}.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.architecture-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.step:not(:last-child)::after{display:none}}
+    @media(max-width:700px){.wrap{width:min(100% - 34px,var(--max))}.nav{min-height:66px}.nav-links,.nav-actions>.button{display:none}.menu-toggle{display:inline-grid;place-items:center}.hero{padding-block:68px 55px}.hero h1{font-size:clamp(3rem,13vw,5rem)}.section{padding-block:70px}.toolkit-head{align-items:start;flex-direction:column}.skill-grid{grid-template-columns:1fr}.architecture-grid{grid-template-columns:1fr 1fr}.step:last-child{grid-column:span 2}.contact{padding-bottom:70px}}
+    @media(max-width:420px){.panel-grid,.architecture-grid{grid-template-columns:1fr}.step:last-child{grid-column:auto}.hero-meta{gap:10px 14px}.footer-row{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <header class="header" id="header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand" aria-label="Lavit Ramsisaria home">L<span>R</span>.</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="projects.html">Projects</a><a class="active" href="about.html" aria-current="page">About</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button" href="https://github.com/viratramsisaria-collab?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub <i data-lucide="arrow-up-right" class="icon"></i></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu"><i data-lucide="menu" class="icon"></i></button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+      <a href="index.html">Home</a><a href="projects.html">Projects</a><a href="about.html" aria-current="page">About</a><a href="#toolkit">Technical toolkit</a><a href="#engineering">Engineering</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-content">
+        <p class="eyebrow">About / Approach / Engineering</p>
+        <h1>Curious about how software <span>actually works.</span></h1>
+        <p>I'm Lavit Ramsisaria, a developer focused on Python, JavaScript, applied AI, and practical software. I learn by turning ideas into working applications, then improving the architecture, usability, and behavior behind them.</p>
+        <div class="hero-actions"><a class="button primary" href="projects.html">Explore my projects <i data-lucide="arrow-up-right" class="icon"></i></a><a class="button" href="mailto:virat.ramsisaria@gmail.com">Email me <i data-lucide="mail" class="icon"></i></a></div>
+        <div class="hero-meta"><span>Applied AI</span><span>Software engineering</span><span>Learning through building</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="approach">
+      <div class="two-col">
+        <div><p class="eyebrow">01 / My approach</p><h2 class="section-title">Build to understand, not just to demonstrate.</h2></div>
+        <div class="content-copy">
+          <p>I enjoy building applications that connect the pieces of software into a useful experience: core logic, models, data, tools, error handling, and an interface that makes the result understandable.</p>
+          <p>A major interest is <strong>agentic AI</strong>—systems that can use language models alongside tools, state, retrieval, and structured workflows. Projects such as PARALLAX, AURA, and IGNIX reflect my interest in moving beyond a basic chat interface toward software that can assist with real tasks.</p>
+          <p>I also explore different types of applications, including multilingual public-information assistance, decision-support workflows, research tools, and AI-assisted games. I aim to choose architecture based on the problem instead of adding complexity just to make a project look advanced.</p>
+          <p>I'm continuing to strengthen my engineering foundations through implementation, debugging, testing, and learning how to make software more reliable and maintainable.</p>
+        </div>
+      </div>
+      <div class="panel-grid" style="margin-top:38px">
+        <article class="panel"><span class="panel-icon"><i data-lucide="workflow" class="icon"></i></span><h3>End-to-end thinking</h3><p>Connect the user experience to the underlying application logic, data, and integrations.</p></article>
+        <article class="panel"><span class="panel-icon"><i data-lucide="shield-check" class="icon"></i></span><h3>Safer automation</h3><p>Think carefully about permissions and confirmation when tools can change files or the environment.</p></article>
+        <article class="panel"><span class="panel-icon"><i data-lucide="blocks" class="icon"></i></span><h3>Proportional architecture</h3><p>Use frameworks, abstractions, and orchestration when they solve a real problem.</p></article>
+        <article class="panel"><span class="panel-icon"><i data-lucide="bug" class="icon"></i></span><h3>Behavior over appearance</h3><p>Check what the software actually does, including failure cases—not only what the interface promises.</p></article>
+      </div>
+    </section>
+
+    <section class="section toolkit" id="toolkit">
+      <div class="wrap">
+        <div class="toolkit-head"><div><p class="eyebrow">02 / Technical toolkit</p><h2 class="section-title">The tools I work with.</h2></div><p>These groups represent areas I've worked with or explored in projects. They are not meant to imply equal proficiency in every technology.</p></div>
+        <div class="skill-grid">
+          <article class="skill-card"><h3>Languages & foundations</h3><div class="chips"><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>TypeScript</span></div></article>
+          <article class="skill-card"><h3>Agent systems & AI</h3><div class="chips"><span>LangChain</span><span>LangGraph</span><span>LLM integration</span><span>Tool use</span><span>RAG</span><span>Model routing</span></div></article>
+          <article class="skill-card"><h3>AI providers</h3><div class="chips"><span>Google Gemini</span><span>Groq</span><span>OpenRouter</span></div></article>
+          <article class="skill-card"><h3>Application development</h3><div class="chips"><span>Streamlit</span><span>Flask</span><span>Django</span><span>Node.js</span><span>Express</span><span>EJS</span></div></article>
+          <article class="skill-card"><h3>Data & storage</h3><div class="chips"><span>SQLite</span><span>ChromaDB</span><span>MongoDB</span><span>NumPy</span><span>Pandas</span></div></article>
+          <article class="skill-card"><h3>Engineering in progress</h3><div class="chips"><span>Testing</span><span>Debugging</span><span>System design</span><span>Security</span><span>Reliability</span><span>Deployment</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section architecture" id="engineering">
+      <div class="wrap">
+        <p class="eyebrow">03 / Engineering interests</p><h2 class="section-title">How an agentic feature fits together.</h2>
+        <p class="section-intro">A simplified architecture pattern I explore in agent projects. Real applications vary, and a straightforward task does not always need every layer.</p>
+        <div class="architecture-grid">
+          <article class="step"><span class="number">LAYER 01</span><h3>Input & context</h3><p>Understand the request, relevant context, and constraints.</p></article>
+          <article class="step"><span class="number">LAYER 02</span><h3>Model integration</h3><p>Connect a provider and shape the model's task.</p></article>
+          <article class="step"><span class="number">LAYER 03</span><h3>Orchestration</h3><p>Coordinate steps, state, routing, and recovery.</p></article>
+          <article class="step"><span class="number">LAYER 04</span><h3>Tools & data</h3><p>Work with retrieval, APIs, files, and other capabilities.</p></article>
+          <article class="step"><span class="number">LAYER 05</span><h3>Validation</h3><p>Check permissions, verify outputs, and report results.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="principles">
+      <div class="principles-grid">
+        <div><p class="eyebrow">04 / Working principles</p><h2 class="section-title">Keep the real problem in focus.</h2><p class="section-intro">The goal is useful software with understandable behavior—not complexity for its own sake.</p>
+          <div class="focus-box"><h3>Areas I'm strengthening</h3><div class="focus-list"><span>Agent reliability</span><span>Testing</span><span>Debugging</span><span>Security</span><span>Deployment</span><span>Production architecture</span></div></div>
+        </div>
+        <div class="principles-list">
+          <article class="principle"><span class="number">01</span><div><h3>Start with the problem</h3><p>Define what the software should do before choosing a framework or model.</p></div></article>
+          <article class="principle"><span class="number">02</span><div><h3>Keep systems understandable</h3><p>Separate responsibilities where it helps, without overengineering the solution.</p></div></article>
+          <article class="principle"><span class="number">03</span><div><h3>Connect AI to real workflows</h3><p>Pair model capabilities with tools, data, validation, and useful outputs.</p></div></article>
+          <article class="principle"><span class="number">04</span><div><h3>Respect the user's environment</h3><p>Consider permissions and explicit confirmation for consequential actions.</p></div></article>
+          <article class="principle"><span class="number">05</span><div><h3>Verify behavior</h3><p>Test important paths, handle errors, and be clear about limitations.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact"><div class="contact-panel"><p class="eyebrow">05 / Get in touch</p><h2>Let's build something useful.</h2><p>I'm interested in applied AI, agent systems, developer tools, and software engineering problems worth exploring.</p><div class="contact-actions"><a class="button primary" href="mailto:virat.ramsisaria@gmail.com">virat.ramsisaria@gmail.com <i data-lucide="arrow-up-right" class="icon"></i></a><a class="button" href="https://github.com/viratramsisaria-collab?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub repositories <i data-lucide="github" class="icon"></i></a></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-row"><span>© <span id="year"></span> Lavit Ramsisaria</span><span>HTML · CSS · JavaScript</span><nav class="footer-links" aria-label="Footer links"><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="#top">Back to top ↑</a></nav></div></footer>
+
+  <script>
+    (()=>{'use strict';
+      const $=(s,r=document)=>r.querySelector(s);const $$=(s,r=document)=>[...r.querySelectorAll(s)];
+      $('#year').textContent=new Date().getFullYear();
+      function renderIcons(){if(window.lucide&&typeof window.lucide.createIcons==='function')window.lucide.createIcons()}
+      renderIcons();window.addEventListener('load',renderIcons,{once:true});
+      const toggle=$('#menuToggle'),menu=$('#mobileMenu');
+      function closeMenu(){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation');toggle.innerHTML='<i data-lucide="menu" class="icon"></i>';renderIcons()}
+      toggle.addEventListener('click',()=>{const opening=!menu.classList.contains('open');menu.classList.toggle('open',opening);toggle.setAttribute('aria-expanded',String(opening));toggle.setAttribute('aria-label',opening?'Close navigation':'Open navigation');toggle.innerHTML=`<i data-lucide="${opening?'x':'menu'}" class="icon"></i>`;renderIcons()});
+      $$('a',menu).forEach(a=>a.addEventListener('click',closeMenu));window.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
+      const header=$('#header'),progress=$('#progress');let queued=false;
+      function updateScroll(){header.style.boxShadow=window.scrollY>20?'0 8px 30px #0002':'none';const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${max>0?scrollY/max*100:0}%`;queued=false}
+      addEventListener('scroll',()=>{if(!queued){requestAnimationFrame(updateScroll);queued=true}},{passive:true});updateScroll();
+      if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver'in window){const targets=$$('.panel, .skill-card, .step, .principle');targets.forEach(el=>el.classList.add('motion-ready'));const style=document.createElement('style');style.textContent='.motion-ready{opacity:0;transform:translateY(12px);transition:opacity .55s ease,transform .55s ease}.motion-ready.in-view{opacity:1;transform:translateY(0)}';document.head.appendChild(style);const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in-view');observer.unobserve(entry.target)}}),{threshold:.12});targets.forEach(el=>observer.observe(el))}
+    })();
+  </script>
+</body>
+</html>
